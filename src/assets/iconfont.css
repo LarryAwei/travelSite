@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('./iconfont/iconfont.eot?t=1571551206449'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1571551206449#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANwAAsAAAAAB4QAAAMiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCLIIjATYCJAMQCwoABCAFhG0HWRumBsiemjwRRNiQjUpFlAAjcMTD0zHq/ZnZiKRIStzWSo26O/DluwbcowRMkQZpgf0/XWsQkY6pUPHInxBWJoaohH2PcqHk1KrrzKu7Ui3rPSUK8N/nuaYuxfPb2dyughatXXq0d4Dj1gF142ggAw2gCfIW2UVcEevJtwnUGhTNZq20uhk5K9CiQDwQBQY5F1xKR3WoFiobdhbxgoPq9DA9wvPo+/HfdDiTVGRo5dZFCY/yf1l/neXZO7oDHXq6ALR9ZExBCnHVGDphl6Sm2Kl1xtubh1Srlphq4PTX2V3Jw4ZJ/JdHSDJRCVXWg1kpnfllpQTBr1OCxK+zChk+iFJdzBxDbmRzvxj4pJn8J1qP1v39X31pffOm7cLbrLdf0Tj0Mv5Q1y1BV2zeCOc033wV/epny63Xbo+/57XoG5Y5FSw0DwkczgYUC4LaLHMTjYxsaDgMQLO6m9fjwsul7YaevwAtYFtb8dSnM1OojP2yKurF87OlffteUy0lc9W1JIz+F3axlo3Dnf5XPnUhf2oXHqyPJbsNN58xA8l5SuTn29uWlkct6ORJOBqWlxcXoeWOT+vBAZFP13VoRcnBtVqtrS0Pm+HevePucHlfM03TbXeQBN2Vb+ycIb2LN5APbKP+ym98Dai93+eVzbmugJ8vgj9EroKPerU0mP4HNLCpuCxyl2JzlPIixQwokVCLvbz5HK3eT6F0gGsJ1To4IlUGMmTVhvTFPIUKdWZRqdoiak0q21+njcJOlBpMWBIQml1A0ugzsmaP9cX8DhU6fUel5rBDrYPwO7HOSIiuRQowGvCYHcMiR82EeDXXuLoRhCEjo+TZyNIKiipGcUJsfDlbBmZQplijDguJmkYwUagJlwr3gdFIsaTQQeC02AFNkzLj4kjTk2I5akKuVikAQwN4GGsMJuJQZiRorXGtfL4REAwxYigdqo5zK6BQicNjCWLFA/RlkhmkupVHVMMEiTQaAiMUlAlWKkwDRkYUJjVPGwQ4mlgDHAlJpjisRaBS7PKK6Q23QS00tkSKHCUqNOxc5JuMWTBCEZXGPAsaCWowESEAAA==') format('woff2'),
+  url('./iconfont/iconfont.woff?t=1571551206449') format('woff'),
+  url('./iconfont/iconfont.ttf?t=1571551206449') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont/iconfont.svg?t=1571551206449#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconRectangleCopy:before {
+  content: "\e6a2";
+}
+
+.iconRectangleCopy1:before {
+  content: "\e6a4";
+}
+
+.iconRectangleCopy2:before {
+  content: "\e6ac";
+}
+
