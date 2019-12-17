@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="ifshow">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div class="icon" v-for="item of page" :key="item.id">
           <div class="icon-img">
@@ -17,6 +17,9 @@
 <script>
 export default {
   name: 'homeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -24,60 +27,13 @@ export default {
         // 所有的参数同 swiper 官方 api 参数
         // ...
         loop: true
-      },
-      iconList: [
-        {
-          id: '001',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/piao.png',
-          desc: '热门景点'
-        },
-        {
-          id: '002',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '003',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/package.png',
-          desc: '度假'
-        },
-        {
-          id: '004',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '机票'
-        },
-        {
-          id: '005',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/piao.png',
-          desc: '热门景点'
-        },
-        {
-          id: '006',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '007',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/package.png',
-          desc: '度假'
-        },
-        {
-          id: '008',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '机票'
-        },
-        {
-          id: '009',
-          url: 'https://s.qunarzz.com/homenode/images/touchheader/train.png',
-          desc: '火车票'
-        }
-      ]
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
@@ -85,6 +41,9 @@ export default {
         pages[page].push(item)
       })
       return pages
+    },
+    ifshow () {
+      return this.list.length
     }
   }
 }
