@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import cityHeader from './Header'
+import cityHeader from './componments/Header'
 export default {
   name: 'City',
   components: {
