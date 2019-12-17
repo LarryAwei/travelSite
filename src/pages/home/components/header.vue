@@ -4,10 +4,12 @@
     <span class="iconfont back-icon">&#xe6ac;</span>
   </div>
   <div class="header-input iconfont">&#xe6a2;输入地点</div>
-  <div class="header-right">
-    {{this.city}}
-    <span class="iconfont arrow">&#xe6a4;</span>
-  </div>
+  <router-link to="/city">
+    <div class="header-right">
+      {{this.city}}
+      <span class="iconfont arrow">&#xe6a4;</span>
+    </div>
+  </router-link>
 </div>
 </template>
 
@@ -45,6 +47,7 @@ export default {
   color #ccc
 
 .header-right
+  color #eee
   width 5rem
   float right
   display flex
