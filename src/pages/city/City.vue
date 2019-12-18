@@ -3,7 +3,7 @@
     <city-header/>
     <city-search :cities="cities"/>
     <city-list :cities="cities" :hot="hotCities" :letter="letter"/>
-    <city-alphabet :cities="cities"/>
+    <city-alphabet :cities="cities" @change="handleLetterChange"/>
   </div>
 
 </template>
